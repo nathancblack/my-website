@@ -3,147 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nathan Black — portfolio. Machine learning, systems programming, and hardware projects.">
-  <title>Nathan Black</title>
+  <meta name="description" content="NATHAN BLACK — INDEX OF WORKS. Machine learning, input hardware, modding. 0KB JavaScript.">
+  <title>NATHAN BLACK ✶ INDEX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav>
-      <span class="logo">nb</span>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<!-- ticker — it does not scroll. it does not need to. -->
+<div class="ticker" aria-hidden="true">
+  NATHAN BLACK ✶ INDEX OF WORKS ✶ NEWARK, DELAWARE ✶ 0KB JAVASCRIPT ✶ NOTHING ON THIS PAGE MOVES ✶ NATHAN BLACK ✶ INDEX OF WORKS ✶ NEWARK, DELAWARE ✶ 0KB JAVASCRIPT ✶ NOTHING ON THIS PAGE MOVES ✶ NATHAN BLACK ✶ INDEX OF WORKS ✶
+</div>
+
+<header class="masthead">
+  <p class="cat-no">CAT. №&nbsp;NB/26/001 — PUBLIC RECORD</p>
+
+  <h1>
+    <span class="line fill">NATHAN</span>
+    <span class="line hollow">NATHAN</span>
+    <span class="line fill offset">BLACK</span>
+  </h1>
+
+  <div class="masthead-star" aria-hidden="true">✶</div>
+
+  <p class="side-note" aria-hidden="true">EST. 2026 — UNIVERSITY OF DELAWARE — CS / ML / HARDWARE</p>
+
+  <p class="manifest">
+    <b>MANIFEST:</b> 01_WORKS [×4] — 02_SELF [×1] — 03_CONTACT [OPEN]
+    — TOTAL PAYLOAD: 2 FILES — JS: <s>YES</s> <b class="red">NEVER</b>
+  </p>
+</header>
+
+<!-- ============ 01 WORKS ============ -->
+
+<section class="works" id="works">
+  <header class="sec-head">
+    <span class="sec-no">01</span>
+    <h2>WORKS<span class="red">.</span></h2>
+    <span class="sec-frak" aria-hidden="true">the index</span>
   </header>
 
-  <main>
+  <ol class="index">
 
-    <section class="hero">
-      <p class="kicker">Hi, my name is</p>
-      <h1>Nathan Black.</h1>
-      <p class="tagline">I build things across the stack — from machine
-      learning models to hardware drivers.</p>
-      <p class="intro">
-        Computer science student at the University of Delaware with a focus on
-        machine learning and systems programming. I like projects that sit
-        close to the metal: custom input drivers, parallel computing, and
-        models trained on real-world data.
-      </p>
-      <a class="button" href="#projects">See my work</a>
-    </section>
+    <li class="row">
+      <a href="https://github.com/nathancblack/neo65-analog-driver">
+        <span class="row-no">001</span>
+        <span class="row-body">
+          <span class="row-title">NEO65 ANALOG DRIVER</span>
+          <span class="row-desc">A Hall-effect keyboard convinced it is a gamepad.
+          Per-key actuation depth → analog stick deflection. WASD becomes a
+          thumbstick. The keyboard was not consulted.</span>
+          <span class="row-tags">[HARDWARE] [HID] [DRIVERS] — 2026</span>
+        </span>
+        <span class="row-glyph" aria-hidden="true">⌨</span>
+      </a>
+    </li>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <li class="row row-invert">
+      <a href="https://github.com/nathancblack/noaa-storm-classification">
+        <span class="row-no">002</span>
+        <span class="row-body">
+          <span class="row-title">NOAA STORM CLASSIFICATION</span>
+          <span class="row-desc">Severe weather, 2023–2024, sorted by machines
+          that have never been rained on. XGBoost vs. TabNet, single elimination.
+          The trees won. The trees usually win.</span>
+          <span class="row-tags">[ML] [XGBOOST] [TABNET] — 2026</span>
+        </span>
+        <span class="row-glyph" aria-hidden="true">⛈</span>
+      </a>
+    </li>
 
-      <div class="project-grid">
+    <li class="row">
+      <a href="https://github.com/nathancblack/UDelaWhere">
+        <span class="row-no">003</span>
+        <span class="row-body">
+          <span class="row-title">UDELAWHERE</span>
+          <span class="row-desc">GeoGuessr compressed to one campus. Built in 36
+          hours at HenHacks 2025. Hostile to anyone who has never left the CS
+          building. Fueled by vending-machine coffee.</span>
+          <span class="row-tags">[WEB] [HACKATHON] [TEAM ×4] — 2025</span>
+        </span>
+        <span class="row-glyph" aria-hidden="true">⌖</span>
+      </a>
+    </li>
 
-        <article class="card">
-          <header>
-            <h3><a href="https://github.com/nathancblack/neo65-analog-driver">neo65-analog-driver</a></h3>
-            <p class="card-meta">Hardware · Systems</p>
-          </header>
-          <p>
-            Turns a QwertyKeys Neo65 Sonic HE+ Hall-effect keyboard into an
-            analog gamepad input device, translating per-key actuation depth
-            into smooth joystick-style movement.
-          </p>
-          <ul class="tags">
-            <li>Drivers</li>
-            <li>HID</li>
-            <li>Hall-effect</li>
-          </ul>
-        </article>
+    <li class="row row-invert">
+      <a href="https://github.com/nathancblack/k-means">
+        <span class="row-no">004</span>
+        <span class="row-body">
+          <span class="row-title">K-MEANS, BY HAND</span>
+          <span class="row-desc">The clustering algorithm rebuilt from nothing.
+          No scikit-learn. Centroids wander, assignments flip, the universe
+          settles. Convergence is a feeling.</span>
+          <span class="row-tags">[PYTHON] [NUMPY ONLY] — 2026</span>
+        </span>
+        <span class="row-glyph" aria-hidden="true">∴</span>
+      </a>
+    </li>
 
-        <article class="card">
-          <header>
-            <h3><a href="https://github.com/nathancblack/noaa-storm-classification">noaa-storm-classification</a></h3>
-            <p class="card-meta">Machine Learning</p>
-          </header>
-          <p>
-            Multi-class classification of severe weather event types from the
-            NOAA Storm Events Database (2023–2024), comparing XGBoost and
-            TabNet on tabular contextual features.
-          </p>
-          <ul class="tags">
-            <li>XGBoost</li>
-            <li>TabNet</li>
-            <li>Python</li>
-          </ul>
-        </article>
+  </ol>
 
-        <article class="card">
-          <header>
-            <h3><a href="https://github.com/nathancblack/UDelaWhere">UDelaWhere</a></h3>
-            <p class="card-meta">Hackathon · HenHacks 2025</p>
-          </header>
-          <p>
-            A GeoGuessr-style game built at HenHacks 2025: guess where on the
-            University of Delaware campus a photo was taken, and get scored on
-            how close you land.
-          </p>
-          <ul class="tags">
-            <li>Web</li>
-            <li>Team project</li>
-          </ul>
-        </article>
+  <p class="index-foot">FULL PROVENANCE → <a href="https://github.com/nathancblack">GITHUB.COM/NATHANCBLACK</a></p>
+</section>
 
-        <article class="card">
-          <header>
-            <h3><a href="https://github.com/nathancblack/k-means">k-means</a></h3>
-            <p class="card-meta">Machine Learning · Coursework</p>
-          </header>
-          <p>
-            A from-scratch implementation of the k-means clustering algorithm,
-            written for machine learning coursework — no scikit-learn
-            shortcuts.
-          </p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>Algorithms</li>
-          </ul>
-        </article>
+<!-- ============ 02 SELF ============ -->
 
-      </div>
-    </section>
+<section class="self" id="self">
+  <header class="sec-head sec-head-dark">
+    <span class="sec-no">02</span>
+    <h2>SELF<span class="red">.</span></h2>
+    <span class="sec-frak" aria-hidden="true">a statement</span>
+  </header>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I'm a computer science student at the University of Delaware. My
-        coursework and side projects center on machine learning, parallel
-        computing (CUDA, MPI), and the occasional deep dive into input
-        hardware and game modding.
-      </p>
-      <p>
-        When I'm not writing code, I'm probably tinkering with keyboards or
-        breaking a game in ways the developers didn't intend.
-      </p>
-    </section>
+  <div class="self-grid">
+    <p class="self-col">
+      COMPUTER SCIENCE STUDENT, UNIVERSITY OF DELAWARE. I WORK ONE LAYER
+      BELOW WHERE I'M SUPPOSED TO BE: DRIVERS FOR KEYBOARDS THAT WERE NEVER
+      MEANT TO BE GAMEPADS, STORM DATA FED TO GRADIENT-BOOSTED TREES,
+      GAMES MODDED UNTIL THEY DO THINGS NO ONE SANCTIONED.
+    </p>
+    <p class="self-col">
+      THE PATTERN: I LIKE SYSTEMS WITH A SEAM IN THEM. A HALL-EFFECT KEY
+      REPORTS HOW <em>FAR</em> IT IS PRESSED, NOT JUST <em>WHETHER</em> —
+      THAT SEAM IS WIDE ENOUGH TO DRIVE AN ENTIRE INPUT STACK THROUGH.
+      COURSEWORK IN PARALLEL: CUDA, MPI, THE CLASSICS.
+    </p>
+  </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        The best way to reach me is by email, or find me on GitHub.
-      </p>
-      <ul class="contact-links">
-        <li><a href="mailto:you@example.com">you@example.com</a></li>
-        <li><a href="https://github.com/nathancblack">github.com/nathancblack</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-      </ul>
-    </section>
+  <p class="self-quote">“refusing to leave it alone”</p>
+  <p class="self-quote-attr">— the entire résumé, abridged</p>
+</section>
 
-  </main>
+<!-- ============ 03 CONTACT ============ -->
 
-  <footer class="site-footer">
-    <p>© 2026 Nathan Black · Built with plain HTML &amp; CSS</p>
-  </footer>
+<section class="contact" id="contact">
+  <header class="sec-head">
+    <span class="sec-no">03</span>
+    <h2>CONTACT<span class="red">.</span></h2>
+    <span class="sec-frak" aria-hidden="true">an invitation</span>
+  </header>
+
+  <a class="shout" href="mailto:you@example.com">WRITE<br>TO ME ☻</a>
+
+  <ul class="wires">
+    <li><span>EMAIL</span><a href="mailto:you@example.com">YOU@EXAMPLE.COM</a></li>
+    <li><span>GITHUB</span><a href="https://github.com/nathancblack">@NATHANCBLACK</a></li>
+    <li><span>LINKEDIN</span><a href="https://www.linkedin.com/">[ADD YOURS]</a></li>
+  </ul>
+</section>
+
+<!-- ============ colophon ============ -->
+
+<footer class="colophon">
+  <p>
+    SET IN ANTON / SPACE MONO / PIRATA ONE ✶ TWO FILES, HAND-TYPED ✶
+    NO FRAMEWORK ✶ NO BUILD STEP ✶ NO ANALYTICS ✶ NO COOKIES ✶
+    NOTHING MOVES, EVER ✶ <a href="https://github.com/nathancblack/my-website">VIEW SOURCE</a>
+  </p>
+  <p class="counter" aria-hidden="true">YOU ARE VISITOR № 000,001 (EVERYONE IS)
+    — BEST VIEWED IN ANY BROWSER — © 2026 N.B.</p>
+</footer>
 
 </body>
 </html>
