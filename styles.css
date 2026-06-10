@@ -1,425 +1,59 @@
-/* =================================================================
-   NATHAN BLACK — INDEX OF WORKS
-   acid catalog. two files. 0KB JS. nothing moves.
-   type: Anton / Space Mono / Pirata One
-   ================================================================= */
-
-:root {
-  --acid: #d6ff00;
-  --ink: #0a0a0a;
-  --red: #ff2200;
-  --paper: #f3f1e9;
-  --display: "Anton", "Arial Narrow", sans-serif;
-  --mono: "Space Mono", ui-monospace, monospace;
-  --frak: "Pirata One", serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: auto;
-}
+/* Nathan Black — academic homepage. Plain HTML and CSS. */
 
 body {
-  background: var(--acid);
-  color: var(--ink);
-  font-family: var(--mono);
-  font-size: 16px;
-  line-height: 1.5;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin: 40px 0 14px;
 }
 
 a {
-  color: inherit;
+  color: #1a0dab;
 }
 
-::selection {
-  background: var(--red);
-  color: var(--acid);
+a:visited {
+  color: #551a8b;
 }
 
-/* --- ticker -------------------------------------------------------- */
-
-.ticker {
-  background: var(--ink);
-  color: var(--acid);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 9px 0 9px 12px;
-  border-bottom: 4px solid var(--ink);
+.affiliation {
+  color: #444;
+  margin: 0 0 32px;
 }
 
-/* --- masthead ------------------------------------------------------- */
-
-.masthead {
-  position: relative;
-  padding: 28px 4vw 56px;
-  border-bottom: 6px solid var(--ink);
-  overflow: hidden;
+ul, ol {
+  padding-left: 24px;
 }
 
-.cat-no {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  border: 2.5px solid var(--ink);
-  display: inline-block;
-  padding: 4px 12px;
-  background: var(--paper);
-  box-shadow: 4px 4px 0 var(--ink);
-  transform: rotate(-1deg);
+.worklist li {
+  margin-bottom: 18px;
 }
 
-.masthead h1 {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(84px, 21vw, 290px);
-  line-height: 0.78;
-  letter-spacing: -0.01em;
-  margin-top: 36px;
-  text-transform: uppercase;
+.work-title {
+  font-style: italic;
 }
 
-.masthead .line {
-  display: block;
-}
-
-.hollow {
-  color: transparent;
-  -webkit-text-stroke: 3px var(--ink);
-  margin-top: -0.06em;
-}
-
-.offset {
-  margin-left: 8vw;
-  margin-top: -0.04em;
-}
-
-.masthead-star {
-  position: absolute;
-  top: 4%;
-  right: -2vw;
-  font-size: clamp(160px, 26vw, 380px);
-  line-height: 1;
-  color: var(--red);
-  z-index: -1;
-}
-
-.side-note {
-  position: absolute;
-  right: 14px;
-  bottom: 140px;
-  writing-mode: vertical-rl;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-}
-
-.manifest {
-  margin-top: 44px;
-  max-width: 70ch;
-  font-size: 13.5px;
-  letter-spacing: 0.04em;
-  border-top: 2.5px solid var(--ink);
+footer {
+  margin-top: 56px;
+  border-top: 1px solid #ccc;
   padding-top: 12px;
-}
-
-.red {
-  color: var(--red);
-}
-
-/* --- section heads ---------------------------------------------------- */
-
-.sec-head {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-  padding: 30px 4vw 22px;
-  border-bottom: 6px solid var(--ink);
-}
-
-.sec-no {
-  font-family: var(--display);
-  font-size: 30px;
-  color: transparent;
-  -webkit-text-stroke: 1.8px var(--ink);
-}
-
-.sec-head h2 {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(54px, 9vw, 110px);
-  line-height: 0.9;
-  letter-spacing: 0.01em;
-}
-
-.sec-frak {
-  font-family: var(--frak);
-  font-size: clamp(26px, 4vw, 44px);
-  margin-left: auto;
-  transform: rotate(-3deg);
-  color: var(--red);
-}
-
-/* --- 01 works: the index ----------------------------------------------- */
-
-.index {
-  list-style: none;
-}
-
-.row {
-  border-bottom: 6px solid var(--ink);
-}
-
-.row a {
-  display: grid;
-  grid-template-columns: minmax(90px, 0.16fr) 1fr minmax(60px, 0.1fr);
-  gap: 24px;
-  align-items: start;
-  padding: 30px 4vw 34px;
-  text-decoration: none;
-}
-
-/* hover = hard invert. no transition. it snaps. */
-.row a:hover {
-  background: var(--ink);
-  color: var(--acid);
-}
-
-.row a:hover .row-no {
-  -webkit-text-stroke-color: var(--acid);
-}
-
-.row a:hover .row-glyph {
-  color: var(--red);
-}
-
-.row-no {
-  font-family: var(--display);
-  font-size: clamp(44px, 7vw, 92px);
-  line-height: 0.9;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--ink);
-}
-
-.row-body {
-  display: block;
-}
-
-.row-title {
-  display: block;
-  font-family: var(--display);
-  font-size: clamp(34px, 6vw, 76px);
-  line-height: 0.95;
-  text-transform: uppercase;
-}
-
-.row-desc {
-  display: block;
-  max-width: 62ch;
-  margin-top: 14px;
-  font-size: 14.5px;
-}
-
-.row-tags {
-  display: block;
-  margin-top: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--red);
-}
-
-.row-glyph {
-  font-size: clamp(30px, 4vw, 54px);
-  line-height: 1;
-  justify-self: end;
-  transform: rotate(8deg);
-}
-
-/* inverted rows — the rhythm of the catalog */
-.row-invert a {
-  background: var(--ink);
-  color: var(--acid);
-}
-
-.row-invert .row-no {
-  -webkit-text-stroke-color: var(--acid);
-}
-
-.row-invert a:hover {
-  background: var(--red);
-  color: var(--ink);
-}
-
-.row-invert a:hover .row-no {
-  -webkit-text-stroke-color: var(--ink);
-}
-
-.row-invert a:hover .row-tags {
-  color: var(--ink);
-}
-
-.index-foot {
-  padding: 16px 4vw;
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  border-bottom: 6px solid var(--ink);
-}
-
-/* --- 02 self ------------------------------------------------------------ */
-
-.self {
-  background: var(--ink);
-  color: var(--acid);
-}
-
-.sec-head-dark {
-  border-bottom-color: var(--acid);
-}
-
-.sec-head-dark .sec-no {
-  -webkit-text-stroke-color: var(--acid);
-}
-
-.self-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4vw;
-  padding: 44px 4vw 10px;
-}
-
-.self-col {
   font-size: 14px;
-  line-height: 1.75;
-  text-align: justify;
-  letter-spacing: 0.02em;
-}
-
-.self-col em {
-  color: var(--red);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.self-quote {
-  font-family: var(--frak);
-  font-size: clamp(52px, 10vw, 130px);
-  line-height: 1;
-  text-align: center;
-  padding: 70px 4vw 0;
-  color: var(--acid);
-}
-
-.self-quote-attr {
-  text-align: center;
-  font-size: 13px;
-  letter-spacing: 0.2em;
-  padding: 14px 4vw 70px;
-  color: var(--red);
-  font-weight: 700;
-}
-
-/* --- 03 contact ----------------------------------------------------------- */
-
-.shout {
-  display: block;
-  font-family: var(--display);
-  font-size: clamp(80px, 17vw, 240px);
-  line-height: 0.82;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 44px 4vw 50px;
-  color: transparent;
-  -webkit-text-stroke: 3px var(--ink);
-}
-
-.shout:hover {
-  color: var(--red);
-  -webkit-text-stroke: 3px var(--ink);
-}
-
-.wires {
-  list-style: none;
-  border-top: 6px solid var(--ink);
-}
-
-.wires li {
-  display: flex;
-  align-items: baseline;
-  gap: 24px;
-  padding: 15px 4vw;
-  border-bottom: 2.5px solid var(--ink);
-  font-size: 14px;
-}
-
-.wires span {
-  font-weight: 700;
-  font-size: 11.5px;
-  letter-spacing: 0.24em;
-  min-width: 110px;
-}
-
-.wires a:hover {
-  background: var(--ink);
-  color: var(--acid);
-  text-decoration: none;
-}
-
-/* --- colophon --------------------------------------------------------------- */
-
-.colophon {
-  border-top: 6px solid var(--ink);
-  background: var(--paper);
-  padding: 26px 4vw 60px;
-}
-
-.colophon p {
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  max-width: 90ch;
-}
-
-.counter {
-  margin-top: 14px;
-  color: rgba(10, 10, 10, 0.6);
-}
-
-/* --- small screens ------------------------------------------------------------ */
-
-@media (max-width: 720px) {
-  .side-note {
-    display: none;
-  }
-
-  .row a {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .row-no {
-    font-size: 40px;
-  }
-
-  .row-glyph {
-    display: none;
-  }
-
-  .self-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding-top: 32px;
-  }
-
-  .sec-frak {
-    display: none;
-  }
+  color: #666;
 }
